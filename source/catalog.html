@@ -16,12 +16,12 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current" href="index.html">
+              <a class="main-nav__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
+              <a class="main-nav__link main-nav__link--current" href="catalog.html">
                 Фото и видео
               </a>
             </li>
@@ -54,28 +54,36 @@
       </p>
       <ul class="gallery__list">
         <li class="gallery__item">
-          <img class="gallery__image" src="img/mobile/catalog/gallery-1.jpg" alt="Дорога и закат" width="280" height="280">
-          <h3 class="gallery__item-title">Неродные просторы</h3>
-          <p class="gallery__author">Автор фото: Борис</p>
-          <div class="gallery__likes">1350</div>
+          <article class="photo-card">
+            <img class="photo-card__image" src="img/mobile/catalog/gallery-1.jpg" alt="Дорога и закат" width="280" height="280">
+            <h3 class="photo-card__title">Неродные просторы</h3>
+            <p class="photo-card__author">Автор фото: Борис</p>
+            <div class="photo-card__likes">1350</div>
+          </article>
         </li>
         <li class="gallery__item">
-          <img class="gallery__image" src="img/mobile/catalog/gallery-3.jpg" alt="Местная растительность" width="280" height="280">
-          <h3 class="gallery__item-title">Местная растительность</h3>
-          <p class="gallery__author">Автор фото: Сергей</p>
-          <div class="gallery__likes">143</div>
+          <article class="photo-card">
+            <img class="photo-card__image" src="img/mobile/catalog/gallery-3.jpg" alt="Местная растительность" width="280" height="280">
+            <h3 class="photo-card__item-title">Местная растительность</h3>
+            <p class="photo-card__author">Автор фото: Сергей</p>
+            <div class="photo-card__likes">143</div>
+          </article>
         </li>
         <li class="gallery__item">
-          <img class="gallery__image" src="img/mobile/catalog/gallery-2.jpg" alt="Дорога на север" width="280" height="280">
-          <h3 class="gallery__item-title">Дорога на север</h3>
-          <p class="gallery__author">Автор фото: Петр</p>
-          <div class="gallery__likes">96</div>
+          <article class="photo-card">
+            <img class="photo-card__image" src="img/mobile/catalog/gallery-2.jpg" alt="Дорога на север" width="280" height="280">
+            <h3 class="photo-card__item-title">Дорога на север</h3>
+            <p class="photo-card__author">Автор фото: Петр</p>
+            <div class="photo-card__likes">96</div>
+          </article>
         </li>
         <li class="gallery__item">
-          <img class="gallery__image" src="img/mobile/catalog/gallery-4.jpg" alt="Мост дьявола" width="280" height="280">
-          <h3 class="gallery__item-title">Мост дьявола</h3>
-          <p class="gallery__author">Автор фото: Антон</p>
-          <div class="gallery__likes">254</div>
+          <article class="photo-card">
+            <img class="photo-card__image" src="img/mobile/catalog/gallery-4.jpg" alt="Мост дьявола" width="280" height="280">
+            <h3 class="photo-card__item-title">Мост дьявола</h3>
+            <p class="photo-card__author">Автор фото: Антон</p>
+            <div class="photo-card__likes">254</div>
+          </article>
         </li>
       </ul>
       <p class="gallery__intro"><b>Все еще сомневаетесь?</b></p>
@@ -94,15 +102,15 @@
           </div>
           <button class="control__replay" type="button">
             <span class="visually-hidden">Загрузить видео заново</span>
-            <img class="control__icon control__icon--replay" src="img/mobile/catalog/replay.svg" alt="Повтор видео" width="16" height="20">
+            <img class="control__icon" src="img/mobile/catalog/replay.svg" alt="Повтор видео" width="16" height="20">
           </button>
           <button class="control__subtitles" type="button">
             <span class="visually-hidden">Включить/выключить субитры</span>
-            <img class="control__icon control__icon--subtitles" src="img/mobile/catalog/subtitles.svg" alt="Субтитры" width="32" height="20">
+            <img class="control__icon" src="img/mobile/catalog/subtitles.svg" alt="Субтитры" width="32" height="20">
           </button>
           <button class="control__fullscreen" type="button">
             <span class="visully-hidden">Просмотр видео в режиме полного экрана</span>
-            <img class="control__icon control__icon--fullscreen" src="img/mobile/catalog/fullscreen.svg" alt="Полный экран" width="20" height="20">
+            <img class="control__icon" src="img/mobile/catalog/fullscreen.svg" alt="Полный экран" width="20" height="20">
           </button>
         </div>
       </div>
