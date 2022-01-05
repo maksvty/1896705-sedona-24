@@ -1,0 +1,102 @@
+.review{
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
+.review__title{
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.review__intro{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.review__form{
+  margin-bottom: 45px;
+}
+
+.review__group{
+  display: flex;
+  justify-content: center;
+
+  border: none;
+  border-bottom: 1px solid @lightgray;
+  padding: 0;
+  padding-bottom: 25px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.review__legend{
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+}
+
+.review__list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.review__item{
+
+  &:not(:last-of-type){
+    margin-bottom: 10px;
+  }
+}
+
+.review__input{
+  box-sizing: border-box;
+  border: none;
+  background-color: #f2f2f2;
+
+  &--textarea{
+    width: 280px;
+    padding: 13px 23px;
+  }
+}
+
+.review__label{
+  display: block;
+  font-size: 14px;
+  color: #333333;
+
+  &--column{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.review__control-label{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.review__sumbit{
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  width: 280px;
+  min-height: 58px;
+  margin: 0 auto;
+  border: none;
+}
