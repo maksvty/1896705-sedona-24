@@ -1,6 +1,5 @@
 .review {
   padding-top: 30px;
-  text-transform: uppercase;
 }
 
 .review__title {
@@ -14,7 +13,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  font-size: 14px;
   line-height: 24px;
   text-align: center;
   margin: 0;
@@ -39,19 +37,15 @@
 
 .review__legend {
   width: 100%;
-  box-sizing: border-box;
   text-align: center;
   margin-bottom: 20px;
 
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
 }
 
 .review__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  .list-reset;
 }
 
 .review__item {
@@ -61,19 +55,17 @@
 }
 
 .review__input {
-  box-sizing: border-box;
   border: none;
   background-color: #f2f2f2;
 
   &--textarea {
-    width: 280px;
+    width: 100%;
     padding: 13px 23px;
   }
 }
 
 .review__label {
   display: block;
-  font-size: 14px;
   color: #333333;
 
   &--column {
@@ -83,8 +75,9 @@
 }
 
 .review__control-label {
-  font-size: 14px;
   font-weight: 700;
+  font-size: 18px;
+  text-transform: none;
 }
 
 .review__sumbit {
@@ -93,7 +86,7 @@
   text-transform: uppercase;
   font-weight: 700;
 
-  width: 280px;
+  width: 100%;
   min-height: 58px;
   margin: 0 auto;
   border: none;

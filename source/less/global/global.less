@@ -2,6 +2,12 @@ img {
   display: block;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -13,4 +19,10 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.list-reset() {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
