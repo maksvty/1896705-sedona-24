@@ -14,19 +14,33 @@
   line-height: 26px;
   margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .booking__text {
   margin: 0;
   margin-bottom: 30px;
   line-height: 24px;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 450px;
+  }
+}
+
+.booking__button-wrapper{
+  width: 100%;
+  max-width: 498px;
+  padding: 0 20px;
 }
 
 .booking__button {
   font-size: 21px;
   line-height: 26px;
-  width: 100%;
-  max-width: 458px;
+
   min-height: 58px;
   margin-bottom: 50px;
 }
