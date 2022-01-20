@@ -1,9 +1,16 @@
 .page-header {
   min-height: 56px;
+  position: relative;
 }
 
 .page-header__logo {
   display: block;
-  width: 84px;
+  width: 102px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

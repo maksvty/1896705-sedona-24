@@ -6,12 +6,24 @@
 
   &--index {
     padding-top: 90px;
-    padding-bottom: 81px;
+    height: 390px;
   }
 
   &--inner {
     padding-top: 50px;
-    padding-bottom: 67px;
+    height: 160px;
     background-position: bottom;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--index {
+      padding-top: 78px;
+      height: 518px;
+    }
+
+    &--inner {
+      padding-top: 95px;
+      height: 290px;
+    }
   }
 }
