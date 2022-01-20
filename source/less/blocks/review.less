@@ -2,11 +2,30 @@
   padding-top: 30px;
 }
 
+.review__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 120px;
+  }
+}
+
+.review__header {
+  padding: 0 105px;
+}
+
 .review__title {
   font-size: 18px;
   text-align: center;
   margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .review__intro {
@@ -20,6 +39,8 @@
 }
 
 .review__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin-bottom: 45px;
 }
 
@@ -33,6 +54,46 @@
   padding-bottom: 25px;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+
+    &--contacts {
+      grid-column: 1/-1;
+    }
+
+    &--impression {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    &--attraction {
+      grid-column: 1/-1;
+
+      .review__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    &--emotion {
+      grid-column: 1/-1;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--contacts {
+      .review__list {
+        display: flex;
+      }
+    }
+
+    &--attraction {
+      .review__list {
+        display: flex;
+      }
+    }
+  }
 }
 
 .review__legend {
@@ -87,6 +148,7 @@
   font-weight: 700;
 
   width: 100%;
+  max-width: 480px;
   min-height: 58px;
   margin: 0 auto;
   border: none;
