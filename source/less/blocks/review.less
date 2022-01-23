@@ -82,6 +82,7 @@
 
     &--contacts {
       grid-column: 1/-1;
+
     }
 
     &--impression {
@@ -151,6 +152,7 @@
 }
 
 .review__legend {
+  display: block;
   position: relative;
   width: 100%;
   text-align: center;
@@ -168,23 +170,25 @@
     line-height: 26px;
 
     &--border {
-      &::after,
       &::before {
         content: "";
         position: absolute;
-        top: 48%;
-        width: 16%;
+        top: 50%;
+        left: 0;
+        width: 100%;
         height: 1px;
+        transform: translateY(-50%);
         background-color: #dbdbdb;
       }
+    }
 
-      &::before {
-        left: 0;
-      }
-
-      &::after {
-        right: 0;
-      }
+    span {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      padding: 0 30px;
+      background-color: @white;
+      min-width: 400px;
     }
   }
 }
@@ -235,11 +239,11 @@
   }
 
   &--tel::after {
-    background: url("../../img/phone.svg") no-repeat center #e6e6e6;
+    background: url("../img/phone.svg") no-repeat center #e6e6e6;
   }
 
   &--email::after {
-    background: url("../../img/mail.svg") no-repeat center #e6e6e6;
+    background: url("../img/mail.svg") no-repeat center #e6e6e6;
   }
 
   @media (min-width: @desktop-width) {
