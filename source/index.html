@@ -48,7 +48,10 @@
       <h1 class="visually-hidden">Поиск гостиниц в небольшом городке "Седона"</h1>
       <section class="intro intro--index">
         <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-        <img src="img/mobile/index/intro-text.svg" width="282" height="214" alt="Добро пожаловать в Седону">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/tablet/index/intro-text.svg">
+          <img src="img/mobile/index/intro-text.svg" alt="Добро пожаловать в Седону">
+        </picture>
       </section>
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -68,23 +71,26 @@
                 </p>
               </div>
               <div class="advantages__image">
-                <img src="img/mobile/index/advantage-1.jpg"  alt="Достопримечательность Седоны" width="320" height="260">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/tablet/index/advantage-1.jpg 1x, img/tablet/index/advantage-1@2x.jpg 2x">
+                  <img srcset="img/mobile/index/advantage-1.jpg 1x, img/mobile/index/advantage-1@2x.jpg 2x" alt="Достопримечательность Седоны" width="320px" height="260">
+                </picture>
               </div>
               <ul class="advantages__inner-list">
                 <li class="advantages__inner-item">
-                  <h4 class="advantages__inner-title">Жилье</h4>
+                  <h4 class="advantages__inner-title advantages__inner-title--housing">Жилье</h4>
                   <p class="advantages__inner-text">
                     Рекомендуем пожить в настоящем мотеле, все как в кино!
                   </p>
                 </li>
                 <li class="advantages__inner-item advantages__inner-item--souvenirs">
-                  <h4 class="advantages__inner-title advantages__inner-title">Сувениры</h4>
+                  <h4 class="advantages__inner-title advantages__inner-title--souvenirs">Сувениры</h4>
                   <p class="advantages__inner-text">
                     Не только китайского, но и местного производства!
                   </p>
                 </li>
                 <li class="advantages__inner-item">
-                  <h4 class="advantages__inner-title">Еда</h4>
+                  <h4 class="advantages__inner-title advantages__inner-title--food">Еда</h4>
                   <p class="advantages__inner-text">
                     Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                   </p>
@@ -100,7 +106,10 @@
                 </p>
               </div>
               <div class="advantages__image">
-                <img src="img/mobile/index/advantage-2.jpg"  alt="Достопримечательность Седоны" width="320" height="260">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/tablet/index/advantage-2.jpg 1x, img/tablet/index/advantage-2@2x.jpg 2x">
+                  <img srcset="img/mobile/index/advantage-2.jpg 1x, img/mobile/index/advantage-2@2x.jpg 2x" alt="Достопримечательность Седоны" width="320px" height="260">
+                </picture>
               </div>
             </li>
             <li class="advantages__item advantages__item--border">
