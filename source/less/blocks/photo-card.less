@@ -72,16 +72,13 @@
 
 .photo-card__likes {
   font-weight: 700;
-  line-height: 24px;
-  padding-left: 40px;
+  line-height: 50px;
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 21px;
-    background: url("../img/like-icon.svg") center;
-    left: 0;
-  }
+  display: flex;
+  align-items: center;
+}
+
+.photo-card__likes svg {
+  margin-right: 15px;
 }
