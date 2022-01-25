@@ -10,7 +10,11 @@
   <div class="container">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="img/mobile/logotype-mobile.svg" width="102" height="84" alt="Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/desktop/logotype.svg">
+          <source media="(min-width: 768px)" srcset="img/tablet/logotype.svg">
+          <img src="img/mobile/logotype.svg" width="187" height="84" alt="Седона">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -47,7 +51,10 @@
       <section class="intro intro--inner">
         <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
         <div class="intro__wrapper">
-          <img src="img/mobile/intro-text-form-catalog.svg" width="230" height="40" alt="Добро пожаловать в Седону">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/tablet/intro-text-form-catalog.svg">
+            <img src="img/mobile/intro-text-form-catalog.svg" width="230" height="40" alt="Добро пожаловать в Седону">
+          </picture>
         </div>
       </section>
       <section class="gallery">
@@ -60,7 +67,10 @@
         <ul class="gallery__list">
           <li class="gallery__item">
             <article class="photo-card">
-              <img class="photo-card__image" src="img/mobile/catalog/gallery-1.jpg" alt="Дорога и закат" width="280" height="280">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/tablet/catalog/gallery-1.jpg 1x, img/tablet/catalog/gallery-1@2x.jpg 2x">
+                <img class="photo-card__image  photo-card__image--first" src="img/mobile/catalog/gallery-1.jpg" srcset="img/mobile/catalog/gallery-1@2x.jpg 2x" alt="Дорога и закат" width="280" height="280">
+              </picture>
               <div class="photo-card__caption">
                 <div class="photo-card__description">
                   <h3 class="photo-card__title">Неродные просторы</h3>
@@ -72,19 +82,7 @@
           </li>
           <li class="gallery__item">
             <article class="photo-card">
-              <img class="photo-card__image" src="img/mobile/catalog/gallery-3.jpg" alt="Местная растительность" width="280" height="280">
-              <div class="photo-card__caption">
-                <div class="photo-card__description">
-                  <h3 class="photo-card__title">Местная растительность</h3>
-                  <p class="photo-card__author">Автор фото: Сергей</p>
-                </div>
-                <div class="photo-card__likes">143</div>
-              </div>
-            </article>
-          </li>
-          <li class="gallery__item">
-            <article class="photo-card">
-              <img class="photo-card__image" src="img/mobile/catalog/gallery-2.jpg" alt="Дорога на север" width="280" height="280">
+              <img  class="photo-card__image" src="img/mobile/catalog/gallery-2.jpg" srcset="img/mobile/catalog/gallery-2@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
               <div class="photo-card__caption photo-card__caption--darker">
                 <div class="photo-card__description">
                   <h3 class="photo-card__title">Дорога на север</h3>
@@ -96,8 +94,20 @@
           </li>
           <li class="gallery__item">
             <article class="photo-card">
-              <img class="photo-card__image" src="img/mobile/catalog/gallery-4.jpg" alt="Мост дьявола" width="280" height="280">
-              <div class="photo-card__caption">
+              <img  class="photo-card__image" src="img/mobile/catalog/gallery-3.jpg" srcset="img/mobile/catalog/gallery-3@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
+              <div class="photo-card__caption photo-card__caption--darker">
+                <div class="photo-card__description">
+                  <h3 class="photo-card__title">Местная растительность</h3>
+                  <p class="photo-card__author">Автор фото: Сергей</p>
+                </div>
+                <div class="photo-card__likes">143</div>
+              </div>
+            </article>
+          </li>
+          <li class="gallery__item">
+            <article class="photo-card">
+              <img  class="photo-card__image" src="img/mobile/catalog/gallery-4.jpg" srcset="img/mobile/catalog/gallery-4@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
+              <div class="photo-card__caption photo-card__caption--darker">
                 <div class="photo-card__description">
                   <h3 class="photo-card__title">Мост дьявола</h3>
                   <p class="photo-card__author">Автор фото: Антон</p>
@@ -112,7 +122,10 @@
           Смотрите видеопрезентацию и<br>скорее за билетами, пока они не подорожали в очередной раз
         </p>
         <div class="gallery__video">
-          <img src="img/mobile/catalog/video.jpg" alt="Картинка видео" width="320" height="200">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/tablet/catalog/video.jpg 1x, img/tablet/catalog/video@2x.jpg 2x">
+            <img class="gallery__image" src="img/mobile/catalog/video.jpg" srcset="img/mobile/catalog/video@2x.jpg 2x" alt="Картинка видео" width="320" height="200">
+          </picture>
           <div class="control">
             <div class="control__range">
               <div class="control__range-scale">

@@ -5,12 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
   <header class="page-header">
     <div class="container">
       <a class="page-header__logo" href="index.html">
-        <img src="img/mobile/logotype-mobile.svg" width="102" height="84" alt="Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/desktop/logotype.svg">
+          <source media="(min-width: 768px)" srcset="img/tablet/logotype.svg">
+          <img src="img/mobile/logotype.svg" width="187" height="84" alt="Седона">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
@@ -48,7 +56,10 @@
       <h1 class="visually-hidden">Поиск гостиниц в небольшом городке "Седона"</h1>
       <section class="intro intro--index">
         <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-        <img src="img/mobile/index/intro-text.svg" width="282" height="214" alt="Добро пожаловать в Седону">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/tablet/index/intro-text.svg">
+          <img src="img/mobile/index/intro-text.svg" alt="Добро пожаловать в Седону">
+        </picture>
       </section>
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -68,23 +79,26 @@
                 </p>
               </div>
               <div class="advantages__image">
-                <img src="img/mobile/index/advantage-1.jpg"  alt="Достопримечательность Седоны" width="320" height="260">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/tablet/index/advantage-1.jpg 1x, img/tablet/index/advantage-1@2x.jpg 2x">
+                  <img src="img/mobile/index/advantage-1.jpg" srcset="img/mobile/index/advantage-1@2x.jpg 2x" alt="Достопримечательность Седоны" width="320px" height="260">
+                </picture>
               </div>
               <ul class="advantages__inner-list">
                 <li class="advantages__inner-item">
-                  <h4 class="advantages__inner-title">Жилье</h4>
+                  <h4 class="advantages__inner-title advantages__inner-title--housing">Жилье</h4>
                   <p class="advantages__inner-text">
                     Рекомендуем пожить в настоящем мотеле, все как в кино!
                   </p>
                 </li>
                 <li class="advantages__inner-item advantages__inner-item--souvenirs">
-                  <h4 class="advantages__inner-title advantages__inner-title">Сувениры</h4>
+                  <h4 class="advantages__inner-title advantages__inner-title--souvenirs">Сувениры</h4>
                   <p class="advantages__inner-text">
                     Не только китайского, но и местного производства!
                   </p>
                 </li>
                 <li class="advantages__inner-item">
-                  <h4 class="advantages__inner-title">Еда</h4>
+                  <h4 class="advantages__inner-title advantages__inner-title--food">Еда</h4>
                   <p class="advantages__inner-text">
                     Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                   </p>
@@ -100,7 +114,10 @@
                 </p>
               </div>
               <div class="advantages__image">
-                <img src="img/mobile/index/advantage-2.jpg"  alt="Достопримечательность Седоны" width="320" height="260">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/tablet/index/advantage-2.jpg 1x, img/tablet/index/advantage-2@2x.jpg 2x">
+                  <img src="img/mobile/index/advantage-2.jpg" srcset="img/mobile/index/advantage-2@2x.jpg 2x" alt="Достопримечательность Седоны" width="320px" height="260">
+                </picture>
               </div>
             </li>
             <li class="advantages__item advantages__item--border">

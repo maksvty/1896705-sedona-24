@@ -1,12 +1,13 @@
 .intro {
   display: flex;
   justify-content: center;
-  background: url("../img/mobile/bg.jpg") no-repeat center;
-  background-size: cover;
+  background: url("../img/intro-bg.jpg") no-repeat;
+
 
   &--index {
     padding-top: 90px;
     height: 390px;
+    background-position: 50% -37px;
   }
 
   &--inner {
@@ -19,11 +20,17 @@
     &--index {
       padding-top: 78px;
       height: 518px;
+      background-position: 50% 0;
     }
 
     &--inner {
       padding-top: 95px;
       height: 290px;
     }
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-bg@2x.jpg");
+    background-size: 1200px auto;
   }
 }
