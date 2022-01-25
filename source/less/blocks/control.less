@@ -29,14 +29,10 @@
     transform: translateY(-50%);
     left: 93px;
     min-height: 0;
-    width: 60%;
+    width: calc(100% - 259px);
     padding: 0;
 
     z-index: 1;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 67.5%;
   }
 }
 
@@ -94,5 +90,13 @@
   &--subtitles {
     margin-left: auto;
     margin-right: 25px;
+  }
+}
+
+.control__icon {
+  fill: #5c6870;
+
+  @media (min-width: @tablet-width) {
+    fill: @white;
   }
 }
