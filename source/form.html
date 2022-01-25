@@ -10,7 +10,11 @@
   <div class="container">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="img/mobile/logotype-mobile.svg" width="102" height="84" alt="Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/desktop/logotype.svg">
+          <source media="(min-width: 768px)" srcset="img/tablet/logotype.svg">
+          <img src="img/mobile/logotype.svg" width="187" height="84" alt="Седона">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
