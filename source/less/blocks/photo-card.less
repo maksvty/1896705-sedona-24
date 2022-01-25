@@ -1,7 +1,7 @@
 .photo-card {
   position: relative;
   width: calc(100% - 40px);
-  max-width: 500px;
+  max-width: 420px;
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -72,16 +72,18 @@
 
 .photo-card__likes {
   font-weight: 700;
-  line-height: 24px;
-  padding-left: 40px;
+  line-height: 50px;
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 21px;
-    background: url("../img/like-icon.svg") center;
-    left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.photo-card__likes svg {
+  fill: fade(@black, 30%);
+  margin-right: 15px;
+
+  @media (min-width: @desktop-width) {
+    fill: @white;
   }
 }

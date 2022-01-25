@@ -22,15 +22,30 @@
   }
 }
 
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  width: 23px;
-  height: 4px;
-  top: 20px;
-  right: 15px;
-  background-color: @lightblue;
-  box-shadow: 0 6px 00 @lightblue, 0 12px 00 @lightblue;
+.main-nav--closed .main-nav__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 4px;
+    top: 20px;
+    right: 15px;
+    background-color: @lightblue;
+    box-shadow: 0 6px 00 @lightblue, 0 12px 00 @lightblue;
+  }
+
+  &:hover::before {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    outline: 3px solid @darkblue;
+    outline-offset: -3px;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -86,26 +101,7 @@
 }
 
 .main-nav__item {
-  background-color: @lightblue;
-  padding: 10px 10px;
-  min-height: 56px;
-
-  text-align: center;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @media (max-width: @tablet-width - 1) {
-    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-
-    &:hover {
-      background-color: @blue;
-    }
-  }
-
   @media (min-width: @tablet-width) {
-    background-color: transparent;
     width: 20%;
 
     &:nth-of-type(2) {
@@ -126,14 +122,50 @@
 }
 
 .main-nav__link {
+  background-color: @lightblue;
+  padding: 10px 10px;
+  min-height: 56px;
+  width: 100%;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-size: 18px;
   color: @white;
   font-weight: 700;
   text-decoration: none;
 
+  @media (max-width: @tablet-width - 1) {
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+    &--shadow {
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 7px;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+      }
+    }
+
+    &:hover {
+      background-color: @blue;
+    }
+
+    &:active {
+      color: fade(@white, 30%);
+    }
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 14px;
     color: @black;
+    background-color: transparent;
 
     &:hover {
       color: @lightblue;
