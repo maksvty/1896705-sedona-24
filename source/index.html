@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/apple.png"> <!-- 180×180 -->
@@ -17,7 +17,7 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-          <img src="img/logotype-mobile.svg" width="187" height="84" alt="Седона">
+          <img src="img/logotype-mobile.svg" alt="Седона">
         </picture>
       </a>
       <nav class="main-nav main-nav--closed">
@@ -25,7 +25,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list--close">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--current" href="index.html">
                 Главная
@@ -43,7 +43,7 @@
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--shadow" href="https://htmlacademy.ru" target="_blank">
-                Html academys
+                Html academy
               </a>
             </li>
           </ul>
@@ -187,8 +187,8 @@
             <li class="social__item">
               <a class="social__link button" href="https://www.youtube.com/HTMLAcademyRUS" target="_blank">
                 <span class="visually-hidden">YouTube</span>
-                <svg width="20" height="14">
-                  <use href="img/sprite.svg#youtube"/>
+                <svg viewBox="0 0 20 14" width="20" height="14">
+                  <use href="img/sprite.svg#youtube" />
                 </svg>
               </a>
             </li>
@@ -198,13 +198,14 @@
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <span class="visually-hidden">HTML Academy</span>
-            <svg class="copyright__icon" width="28" height="35">
-              <use href="img/sprite.svg#logo"/>
+            <svg width="28" height="35" viewBox="0 0 28 35">
+              <use href="img/sprite.svg#logo" />
             </svg>
           </a>
         </div>
       </div>
     </footer>
   </div>
+  <script src="js/menu-burger.js"></script>
 </body>
 </html>

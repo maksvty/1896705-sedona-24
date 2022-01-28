@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/apple.png"> <!-- 180×180 -->
@@ -17,10 +17,10 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-          <img src="img/logotype-mobile.svg" width="187" height="84" alt="Седона">
+          <img src="img/logotype-mobile.svg" alt="Седона">
         </picture>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -171,19 +171,19 @@
             <div class="control__buttons">
               <button class="control__button control__button--replay" type="button">
                 <span class="visually-hidden">Загрузить видео заново</span>
-                <svg class="control__icon" width="16" height="20" preserveAspectRatio="none">
+                <svg width="16" height="20" preserveAspectRatio="none">
                   <use href="img/sprite.svg#replay"/>
                 </svg>
               </button>
               <button class="control__button control__button--subtitles" type="button">
                 <span class="visually-hidden">Включить/выключить субитры</span>
-                <svg class="control__icon" width="32" height="20" preserveAspectRatio="none">
+                <svg width="32" height="20" preserveAspectRatio="none">
                   <use href="img/sprite.svg#subtitles"/>
                 </svg>
               </button>
               <button class="control__button" type="button">
                 <span class="visually-hidden">Просмотр видео в режиме полного экрана</span>
-                <svg class="control__icon" width="20" height="20" preserveAspectRatio="none">
+                <svg width="20" height="20" preserveAspectRatio="none">
                   <use href="img/sprite.svg#fullscreen"/>
                 </svg>
               </button>
@@ -229,7 +229,7 @@
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <span class="visually-hidden">HTML Academy</span>
-            <svg class="copyright__icon" width="28" height="35">
+            <svg width="28" height="35">
               <use href="img/sprite.svg#logo"/>
             </svg>
           </a>
