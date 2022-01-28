@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
   <div class="container">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/desktop/logotype.svg">
-          <source media="(min-width: 768px)" srcset="img/tablet/logotype.svg">
-          <img src="img/mobile/logotype.svg" width="187" height="84" alt="Седона">
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img src="img/logotype-mobile.svg" width="187" height="84" alt="Седона">
         </picture>
       </a>
       <nav class="main-nav">
@@ -52,8 +56,8 @@
         <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
         <div class="intro__wrapper">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/tablet/intro-text-form-catalog.svg">
-            <img src="img/mobile/intro-text-form-catalog.svg" width="230" height="40" alt="Добро пожаловать в Седону">
+            <source media="(min-width: 768px)" srcset="img/intro-text-form-catalog-tablet.svg">
+            <img src="img/intro-text-form-catalog-mobile.svg" width="230" height="40" alt="Добро пожаловать в Седону">
           </picture>
         </div>
       </section>
@@ -68,9 +72,9 @@
           <li class="gallery__item">
             <article class="photo-card">
               <picture>
-                <source media="(min-width: 980px)" srcset="img/desktop/catalog/gallery-1.jpg 1x, img/tablet/catalog/gallery-1@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/tablet/catalog/gallery-1.jpg 1x, img/tablet/catalog/gallery-1@2x.jpg 2x">
-                <img class="photo-card__image  photo-card__image--first" src="img/mobile/catalog/gallery-1.jpg" srcset="img/mobile/catalog/gallery-1@2x.jpg 2x" alt="Дорога и закат" width="280" height="280">
+                <source media="(min-width: 980px)" srcset="img/gallery-1-desktop.jpg 1x, img/gallery-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/gallery-1-tablet.jpg 1x, img/gallery-1-tablet@2x.jpg 2x">
+                <img class="photo-card__image  photo-card__image--first" src="img/gallery-1-mobile.jpg" srcset="img/gallery-1-mobile@2x.jpg 2x" alt="Дорога и закат" width="280" height="280">
               </picture>
               <div class="photo-card__caption">
                 <div class="photo-card__description">
@@ -89,8 +93,8 @@
           <li class="gallery__item">
             <article class="photo-card">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/tablet/catalog/gallery-2.jpg 1x, img/tablet/catalog/gallery-2@2x.jpg 2x">
-                <img  class="photo-card__image" src="img/mobile/catalog/gallery-2.jpg" srcset="img/mobile/catalog/gallery-2@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
+                <source media="(min-width: 768px)" srcset="img/gallery-2-tablet.jpg 1x, img/gallery-2@2x-tablet.jpg 2x">
+                <img  class="photo-card__image" src="img/gallery-2-mobile.jpg" srcset="img/gallery-2-mobile2@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
               </picture>
               <div class="photo-card__caption photo-card__caption--darker">
                 <div class="photo-card__description">
@@ -109,8 +113,8 @@
           <li class="gallery__item">
             <article class="photo-card">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/tablet/catalog/gallery-3.jpg 1x, img/tablet/catalog/gallery-3@2x.jpg 2x">
-                <img  class="photo-card__image" src="img/mobile/catalog/gallery-3.jpg" srcset="img/mobile/catalog/gallery-3@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
+                <source media="(min-width: 768px)" srcset="img/gallery-3-tablet.jpg 1x, img/gallery-3-tablet@2x.jpg 2x">
+                <img  class="photo-card__image" src="img/gallery-3-mobile.jpg" srcset="img/gallery-3-mobile@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
               </picture>
               <div class="photo-card__caption photo-card__caption--darker">
                 <div class="photo-card__description">
@@ -129,8 +133,8 @@
           <li class="gallery__item">
             <article class="photo-card">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/tablet/catalog/gallery-4.jpg 1x, img/tablet/catalog/gallery-4@2x.jpg 2x">
-                <img  class="photo-card__image" src="img/mobile/catalog/gallery-4.jpg" srcset="img/mobile/catalog/gallery-4@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
+                <source media="(min-width: 768px)" srcset="img/gallery-4-tablet.jpg 1x, img/gallery-4-tablet@2x.jpg 2x">
+                <img  class="photo-card__image" src="img/gallery-4-mobile.jpg" srcset="img/gallery-4-mobile@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
               </picture>
               <div class="photo-card__caption photo-card__caption--darker">
                 <div class="photo-card__description">
@@ -153,8 +157,8 @@
         </p>
         <div class="gallery__video">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/tablet/catalog/video.jpg 1x, img/tablet/catalog/video@2x.jpg 2x">
-            <img class="gallery__image" src="img/mobile/catalog/video.jpg" srcset="img/mobile/catalog/video@2x.jpg 2x" alt="Картинка видео" width="320" height="200">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="gallery__image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Картинка видео" width="320" height="200">
           </picture>
           <div class="control">
             <div class="control__range">
