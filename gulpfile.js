@@ -53,18 +53,18 @@ const optimizeImages = () => {
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/*.{jpg,png}')
+  return gulp.src('source/img/*.{jpg,png,webp}')
     .pipe(gulp.dest('build/img'));
 }
 
 //WebP
 
-const createWebp = () => {
+export const createWebp = () => {
   return gulp.src('source/img/*.{jpg,png}')
     .pipe(squoosh({
       webp: {}
     }))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('source/img'));
 }
 
 //SVG
@@ -143,10 +143,10 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
-    sprite,
-    createWebp
+    sprite
   ),
 );
+
 
 // Default
 
