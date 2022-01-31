@@ -360,6 +360,16 @@
     padding: 20px;
   }
 
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background: @white;
+    outline: 4px solid #E5E5E5;
+    outline-offset: -4px;
+  }
+
   @media (min-width: @desktop-width) {
     &--tel,
     &--email {
@@ -388,6 +398,22 @@
   &--radio {
     border-radius: 50%;
   }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+
+    &::before {
+      opacity: 0.3;
+    }
+
+    .review__icon {
+      opacity: 0.3;
+    }
+  }
 }
 
 .review__input[type="radio"]:checked + .review__mark::before {
@@ -397,6 +423,14 @@
   height: 21px;
   background-color: #000000;
   border-radius: 50%;
+}
+
+.review__icon {
+  display: none;
+}
+
+.review__input[type="checkbox"]:checked + .review__mark .review__icon {
+  display: block;
 }
 
 .review__control-label {
