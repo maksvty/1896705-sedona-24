@@ -20,8 +20,8 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
-      autoprefixer()//,
-      //csso()
+      autoprefixer(),
+      csso()
     ]))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
@@ -108,7 +108,7 @@ const clean = (done) => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -128,14 +128,9 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/js/*.js', gulp.series(styles));
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
-
-//const watcher = () => {
-//  gulp.watch('source/less/**/*.less', gulp.series(styles));
-//  gulp.watch('source/js/*.js', gulp.series(styles));
-//  gulp.watch('source/*.html', gulp.series(html, reload));
-//}
 
 //Build
 
@@ -156,10 +151,6 @@ export const build = gulp.series(
 // Default
 
 export default gulp.series(
-  styles, server, watcher
-);
-
-/*export default gulp.series(
   clean,
   copy,
   copyImages,
@@ -174,4 +165,4 @@ export default gulp.series(
     server,
     watcher
   )
-);*/
+);

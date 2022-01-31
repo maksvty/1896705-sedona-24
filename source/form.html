@@ -57,7 +57,7 @@
         <div class="intro__wrapper">
           <picture>
             <source media="(min-width: 768px)" srcset="img/intro-text-form-catalog-tablet.svg">
-            <img src="img/intro-text-form-catalog-mobile.svg" width="230" height="40" alt="Добро пожаловать в Седону">
+            <img src="img/intro-text-form-catalog-mobile.svg" alt="Добро пожаловать в Седону">
           </picture>
         </div>
       </section>
@@ -94,7 +94,7 @@
               </ul>
             </fieldset>
             <fieldset class="review__group review__group--contacts">
-              <legend class="review__legend review__legend--border"><span>Контактная информация:</span></legend>
+              <legend class="review__legend review__legend--contacts review__legend--border"><span>Контактная информация:</span></legend>
               <ul class="review__list">
                 <li class="review__item review__item--tel">
                   <label class="review__label review__label--tel">
@@ -111,16 +111,16 @@
               </ul>
             </fieldset>
             <fieldset class="review__group review__group--impression">
-              <legend class="review__legend review__legend--big-margin">Ваше общее впечатление:</legend>
-              <ul class="review__list">
-                <li class="review__item review__item--big-margin">
+              <legend class="review__legend review__legend--impression">Ваше общее впечатление:</legend>
+              <ul class="review__list review__list--impression">
+                <li class="review__item review__item">
                   <label class="review__control">
                     <input class="review__input review__input--radio visually-hidden" type="radio" name="impression" value="5" checked>
                     <span  class="review__mark review__mark--radio"></span>
                     <span class="review__control-label">Скорее положительное</span>
                   </label>
                 </li>
-                <li class="review__item review__item--big-margin">
+                <li class="review__item review__item">
                   <label class="review__control">
                     <input class="review__input review__input--radio visually-hidden" type="radio" name="impression" value="2">
                     <span  class="review__mark review__mark--radio"></span>
@@ -137,15 +137,15 @@
               </ul>
             </fieldset>
             <fieldset class="review__group review__group--attraction">
-              <legend class="review__legend review__legend--big-margin review__legend--border"><span>Посещенные<br>достопримечательности:</span></legend>
-              <ul class="review__list">
+              <legend class="review__legend review__legend--border"><span>Посещенные<br>достопримечательности:</span></legend>
+              <ul class="review__list review__list--attraction">
                 <li class="review__item review__item--big-margin">
                   <label class="review__control">
                     <input class="review__input review__input--checkbox  visually-hidden" type="checkbox" name="devils_bridge" checked>
                     <span  class="review__mark">
                       <img class="review__icon" src="img/tick.svg" alt="Галочка" width="24" height="17">
                     </span>
-                    <span class="review__control-label">Мост дьявола</span>
+                    <span class="review__control-label">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="review__item review__item--big-margin">
