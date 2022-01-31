@@ -1,20 +1,25 @@
 .review {
-  padding-top: 30px;
+  //
 }
 
 .review__wrapper {
+  padding-top: 30px;
+
   @media (min-width: @tablet-width) {
-    padding: 0 60px;
+    padding: 60px 60px 16px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 120px;
+    padding: 110px 120px 21px;
   }
 }
 
 .review__header {
+  border-bottom: 1px solid #e5e5e5;
+
   @media (min-width: @tablet-width) {
     padding: 0 105px;
+    border: none;
   }
 }
 
@@ -27,6 +32,7 @@
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 26px;
+    margin-bottom: 33px;
   }
 }
 
@@ -37,10 +43,20 @@
   line-height: 24px;
   text-align: center;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .review__form {
+  margin-bottom: 40px;
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -55,22 +71,19 @@
   padding: 0 20px;
   padding-bottom: 25px;
   margin: 0;
-  margin-bottom: 20px;
   border-bottom: 1px solid @lightgray;
 
   &:last-of-type {
     margin-bottom: 25px;
-    border: none;
-  }
-
-  &--impression,
-  &--attraction {
-    padding-bottom: 35px;
   }
 
   @media (min-width: @tablet-width) {
     border: none;
     padding: 0;
+
+    &:last-of-type {
+      margin-bottom: 57px;
+    }
 
     &--name {
       margin-left: 60px;
@@ -82,6 +95,8 @@
 
     &--contacts {
       grid-column: 1/-1;
+      margin-top: 50px;
+      margin-bottom: 34px;
     }
 
     &--impression {
@@ -98,7 +113,7 @@
 
     &--attraction {
       grid-column: 1/-1;
-      margin-bottom: 50px;
+      margin-bottom: 10px;
 
       .review__legend {
         margin-left: auto;
@@ -110,7 +125,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 60px;
-        grid-row-gap: 50px;
+        grid-row-gap: 10px;
         margin: 0 auto;
       }
 
@@ -125,11 +140,17 @@
   }
 
   @media (min-width: @desktop-width) {
+    &:last-of-type {
+      margin-bottom: 56px;
+    }
+
     &--name {
       margin-left: 80px;
     }
 
     &--contacts {
+      margin-bottom: 19px;
+
       .review__list {
         display: flex;
         justify-content: space-between;
@@ -155,18 +176,16 @@
   position: relative;
   width: 100%;
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 16px;
 
   font-weight: 700;
   font-size: 18px;
 
-  &--big-margin {
-    margin-bottom: 30px;
-  }
-
   @media (min-width: @tablet-width) {
     font-size: 21px;
     line-height: 26px;
+    margin-bottom: 55px;
 
     &--border {
       &::before {
@@ -181,6 +200,10 @@
       }
     }
 
+    &--contacts {
+      margin-bottom: 20px;
+    }
+
     span {
       display: inline-block;
       position: relative;
@@ -190,22 +213,56 @@
       min-width: 400px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &--contacts {
+      margin-bottom: 67px;
+    }
+
+    &--impression {
+      margin-left: 75px;
+    }
+  }
 }
 
 .review__list {
   .list-reset;
   width: 100%;
+
+  &--impression {
+    margin: 16px 0;
+
+    .review__item {
+      margin-bottom: 41px;
+    }
+  }
+
+  &--attraction {
+    margin: 15px 0;
+
+    .review__item {
+      margin-bottom: 52px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    &--impression {
+      .review__item {
+        margin-bottom: 52px;
+      }
+    }
+  }
 }
 
 .review__item {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   &:last-of-type {
     margin-bottom: 0;
   }
 
-  &--big-margin {
-    margin-bottom: 50px;
+  &--tel {
+    margin-bottom: 17px;
   }
 
   @media (min-width: @desktop-width) {
@@ -255,13 +312,19 @@
 }
 
 .review__label-caption {
-  margin-right: 10px;
+  margin-right: 12px;
   display: block;
 
   &--contacts {
     margin-right: 0;
     margin-left: 20px;
     margin-bottom: 10px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--contacts {
+      margin-bottom: 15px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -284,6 +347,7 @@
 
   font-size: 18px;
   font-weight: 700;
+  font-family: "PT Sans", "Arial", sans-serif;
 
   &--tel,
   &--email {
@@ -292,7 +356,18 @@
 
   &--textarea {
     width: 100%;
-    padding: 13px 20px;
+    height: 160px;
+    padding: 20px;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background: @white;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
   }
 
   @media (min-width: @desktop-width) {
@@ -323,22 +398,46 @@
   &--radio {
     border-radius: 50%;
   }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+
+    &::before {
+      opacity: 0.3;
+    }
+
+    .review__icon {
+      opacity: 0.3;
+    }
+  }
 }
 
 .review__input[type="radio"]:checked + .review__mark::before {
   content: "";
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 21px;
+  height: 21px;
   background-color: #000000;
   border-radius: 50%;
+}
+
+.review__icon {
+  display: none;
+}
+
+.review__input[type="checkbox"]:checked + .review__mark .review__icon {
+  display: block;
 }
 
 .review__control-label {
   font-weight: 700;
   font-size: 18px;
   text-transform: none;
-  margin-left: 75px;
+  margin-left: 78px;
 }
 
 .review__sumbit {
@@ -347,9 +446,13 @@
   text-transform: uppercase;
   font-weight: 700;
 
-  width: 100%;
+  width: calc(100% - 40px);
   max-width: 480px;
   min-height: 58px;
   margin: 0 auto;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
