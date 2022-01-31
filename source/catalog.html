@@ -9,6 +9,30 @@
   <link rel="icon" href="img/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* Mobile layout by default */
+      background-image: url( "img/Mobile.png" );
+    }
+    /* Tablet */
+    @media ( min-width: 768px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url( "img/Tablet.png" );
+      }
+    }
+    /* Desktop */
+    @media ( min-width: 1200px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url( "img/Desktop.png" );
+      }
+    }
+  </style>
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js"></script>
 </head>
 <body class="page__body">
   <div class="container">
@@ -57,7 +81,7 @@
         <div class="intro__wrapper">
           <picture>
             <source media="(min-width: 768px)" srcset="img/intro-text-form-catalog-tablet.svg">
-            <img src="img/intro-text-form-catalog-mobile.svg" width="230" height="40" alt="Добро пожаловать в Седону">
+            <img src="img/intro-text-form-catalog-mobile.svg" alt="Добро пожаловать в Седону">
           </picture>
         </div>
       </section>
@@ -105,14 +129,14 @@
               </picture>
               <div class="photo-card__caption photo-card__caption--darker">
                 <div class="photo-card__description">
-                  <h3 class="photo-card__title">Дорога на север</h3>
+                  <h3 class="photo-card__title">Местная растительность</h3>
                   <p class="photo-card__author">Автор фото: Петр</p>
                 </div>
                 <div class="photo-card__likes">
                   <svg class="photo-card__like-icon" width="23" height="21">
                     <use href="img/sprite.svg#like"/>
                   </svg>
-                  96
+                  143
                 </div>
               </div>
             </article>
@@ -128,14 +152,14 @@
               </picture>
               <div class="photo-card__caption photo-card__caption--darker">
                 <div class="photo-card__description">
-                  <h3 class="photo-card__title">Местная растительность</h3>
+                  <h3 class="photo-card__title">Дорога на север</h3>
                   <p class="photo-card__author">Автор фото: Сергей</p>
                 </div>
                 <div class="photo-card__likes">
                   <svg class="photo-card__like-icon" width="23" height="21">
                     <use href="img/sprite.svg#like"/>
                   </svg>
-                  143
+                  96
                 </div>
               </div>
             </article>
@@ -166,7 +190,7 @@
         </ul>
         <p class="gallery__video-text"><b>Все еще сомневаетесь?</b></p>
         <p class="gallery__video-intro">
-          Смотрите видеопрезентацию и<br>скорее за билетами, пока они не подорожали в очередной раз
+          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз
         </p>
         <div class="gallery__video">
           <picture>
