@@ -13,8 +13,17 @@
   margin-bottom: 42px;
 
   @media (min-width: @tablet-width) {
+<<<<<<< Updated upstream
     width: 530px;
     margin-bottom: 57px;
+=======
+    width: 550px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 17px;
+>>>>>>> Stashed changes
   }
 }
 
@@ -217,5 +226,29 @@
 }
 
 .advantages__inner-text {
+<<<<<<< Updated upstream
   //
+=======
+  margin: 0;
+
+  @media (max-width: @tablet-width - 1) {
+    br {
+      display: none;
+    }
+  }
+}
+
+.advantages__line-break {
+  @media (max-width: @tablet-width - 1) {
+    &--tablet {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    &--mobile {
+      display: none;
+    }
+  }
+>>>>>>> Stashed changes
 }
