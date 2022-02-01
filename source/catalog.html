@@ -20,7 +20,7 @@
           <img src="img/logotype-mobile.svg" alt="Седона">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -54,12 +54,7 @@
       <h1 class="visually-hidden">Поиск гостиниц в небольшом городке "Седона"</h1>
       <section class="intro intro--inner">
         <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-        <div class="intro__wrapper">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/intro-text-form-catalog-tablet.svg">
-            <img src="img/intro-text-form-catalog-mobile.svg" alt="Добро пожаловать в Седону">
-          </picture>
-        </div>
+        <img class="intro__image" src="img/intro-text-form-catalog.svg" alt="Добро пожаловать в Седону" width="229" height="39">
       </section>
       <section class="gallery">
         <div class="gallery__header">
@@ -71,15 +66,17 @@
         <ul class="gallery__list">
           <li class="gallery__item">
             <article class="photo-card">
-              <picture>
-                <source type="image/webp" media="(min-width: 980px)" srcset="img/gallery-1-desktop.webp 1x, img/gallery-1-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-1-tablet.webp 1x, img/gallery-1-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/gallery-1-mobile.webp 1x, img/gallery-1-mobile@2x.webp 2x">
+              <a href="#" onclick="return false;">
+                <picture>
+                  <source type="image/webp" media="(min-width: 980px)" srcset="img/gallery-1-desktop.webp 1x, img/gallery-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-1-tablet.webp 1x, img/gallery-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery-1-mobile.webp 1x, img/gallery-1-mobile@2x.webp 2x">
 
-                <source media="(min-width: 980px)" srcset="img/gallery-1-desktop.jpg 1x, img/gallery-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/gallery-1-tablet.jpg 1x, img/gallery-1-tablet@2x.jpg 2x">
-                <img class="photo-card__image  photo-card__image--first" src="img/gallery-1-mobile.jpg" srcset="img/gallery-1-mobile@2x.jpg 2x" alt="Дорога и закат" width="280" height="280">
-              </picture>
+                  <source media="(min-width: 980px)" srcset="img/gallery-1-desktop.jpg 1x, img/gallery-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/gallery-1-tablet.jpg 1x, img/gallery-1-tablet@2x.jpg 2x">
+                  <img class="photo-card__image  photo-card__image--first" src="img/gallery-1-mobile.jpg" srcset="img/gallery-1-mobile@2x.jpg 2x" alt="Дорога и закат" width="280" height="280">
+                </picture>
+              </a>
               <div class="photo-card__caption">
                 <div class="photo-card__description">
                   <h3 class="photo-card__title">Неродные просторы</h3>
@@ -96,13 +93,15 @@
           </li>
           <li class="gallery__item">
             <article class="photo-card">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-2-tablet.webp 1x, img/gallery-2-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/gallery-2-mobile.webp 1x, img/gallery-2-mobile@2x.webp 2x">
+              <a href="#" onclick="return false;">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-2-tablet.webp 1x, img/gallery-2-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery-2-mobile.webp 1x, img/gallery-2-mobile@2x.webp 2x">
 
-                <source media="(min-width: 768px)" srcset="img/gallery-2-tablet.jpg 1x, img/gallery-2-tablet@2x.jpg 2x">
-                <img  class="photo-card__image" src="img/gallery-2-mobile.jpg" srcset="img/gallery-2-mobile@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
-              </picture>
+                  <source media="(min-width: 768px)" srcset="img/gallery-2-tablet.jpg 1x, img/gallery-2-tablet@2x.jpg 2x">
+                  <img  class="photo-card__image" src="img/gallery-2-mobile.jpg" srcset="img/gallery-2-mobile@2x.jpg 2x" alt="Дорога на север" width="280" height="280">
+                </picture>
+              </a>
               <div class="photo-card__caption photo-card__caption--darker">
                 <div class="photo-card__description">
                   <h3 class="photo-card__title">Местная растительность</h3>
@@ -119,13 +118,15 @@
           </li>
           <li class="gallery__item">
             <article class="photo-card">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-3-tablet.webp 1x, img/gallery-3-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/gallery-3-mobile.webp 1x, img/gallery-3-mobile@2x.webp 2x">
+              <a href="#" onclick="return false;">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-3-tablet.webp 1x, img/gallery-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery-3-mobile.webp 1x, img/gallery-3-mobile@2x.webp 2x">
 
-                <source media="(min-width: 768px)" srcset="img/gallery-3-tablet.jpg 1x, img/gallery-3-tablet@2x.jpg 2x">
-                <img  class="photo-card__image" src="img/gallery-3-mobile.jpg" srcset="img/gallery-3-mobile@2x.jpg 2x" alt="Дорога на север" width="280" height="280" loading="lazy">
-              </picture>
+                  <source media="(min-width: 768px)" srcset="img/gallery-3-tablet.jpg 1x, img/gallery-3-tablet@2x.jpg 2x">
+                  <img  class="photo-card__image" src="img/gallery-3-mobile.jpg" srcset="img/gallery-3-mobile@2x.jpg 2x" alt="Дорога на север" width="280" height="280" loading="lazy">
+                </picture>
+              </a>
               <div class="photo-card__caption photo-card__caption--darker">
                 <div class="photo-card__description">
                   <h3 class="photo-card__title">Дорога на север</h3>
@@ -142,13 +143,15 @@
           </li>
           <li class="gallery__item">
             <article class="photo-card">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-4-tablet.webp 1x, img/gallery-4-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/gallery-4-mobile.webp 1x, img/gallery-4-mobile@2x.webp 2x">
+              <a href="#" onclick="return false;">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-4-tablet.webp 1x, img/gallery-4-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery-4-mobile.webp 1x, img/gallery-4-mobile@2x.webp 2x">
 
-                <source media="(min-width: 768px)" srcset="img/gallery-4-tablet.jpg 1x, img/gallery-4-tablet@2x.jpg 2x">
-                <img class="photo-card__image" src="img/gallery-4-mobile.jpg" srcset="img/gallery-4-mobile@2x.jpg 2x" alt="Дорога на север" width="280" height="280" loading="lazy">
-              </picture>
+                  <source media="(min-width: 768px)" srcset="img/gallery-4-tablet.jpg 1x, img/gallery-4-tablet@2x.jpg 2x">
+                  <img class="photo-card__image" src="img/gallery-4-mobile.jpg" srcset="img/gallery-4-mobile@2x.jpg 2x" alt="Мост Дьявола" width="280" height="280" loading="lazy">
+                </picture>
+              </a>
               <div class="photo-card__caption photo-card__caption--darker">
                 <div class="photo-card__description">
                   <h3 class="photo-card__title">Мост дьявола</h3>

@@ -1,11 +1,36 @@
 .page-header {
   min-height: 56px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header__logo {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 56px;
+  background-color: @white;
+  order: 2;
+
+  &--order {
+    order: 0;
+    position: absolute;
+  }
+
+  @media (min-width: @tablet-width) {
+    order: 0;
+    position: absolute;
+  }
+}
+
+.page-header__logo img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    z-index: 2;
+  }
 }

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
-  <link rel="stylesheet" href="css/style.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel=" icon" href="img/icon.svg" type="image/svg+xml">
@@ -14,14 +14,14 @@
 <body class="page__body">
   <div class="container">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
+      <a class="page-header__logo" href="index.html"> <!-- Класс page-header__logo--order отвечает за позиционирование, если используется js -->
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
           <img src="img/logotype-mobile.svg" alt="Седона">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav"> <!-- Классы page-header__logo--closed, main-nav--opened отвечают за скрытие меню и бургера -->
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -55,10 +55,7 @@
       <h1 class="visually-hidden">Поиск гостиниц в небольшом городке "Седона"</h1>
       <section class="intro intro--index">
         <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-        <picture>
-          <source media="(min-width: 768px)" srcset="img/intro-text-tablet.svg">
-          <img src="img/intro-text-mobile.svg" alt="Добро пожаловать в Седону">
-        </picture>
+        <img class="intro__image" src="img/intro-text.svg" alt="Добро пожаловать в Седону" width="282" height="214">
       </section>
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -148,7 +145,7 @@
                 <h3 class="advantages__subtitle">Мало туристов</h3>
                 <div class="advantages__number">— №5 —</div>
                 <p class="advantages__description advantages__description--grand-canyon">
-                  Большинство едет в Гранд Каньон<br>&nbspи толпится там
+                  Большинство едет в Гранд Каньон<br>&nbsp;и толпится там
                 </p>
               </div>
             </li>
@@ -160,11 +157,11 @@
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <div class="booking__box">
             <p class="booking__intro"><b>Заинтересовались?</b></p>
-            <p class="booking__text">Укажите предполагаемые даты поездки,<br>&nbspи мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+            <p class="booking__text">Укажите предполагаемые даты поездки,<br>&nbsp;и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
             <a class="booking__button button" href="#!">Найти гостиницу</a>
           </div>
           <h2 class="visually-hidden">Карта с геолокацией</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497887.11375002586!2d-111.98510294768319!3d34.934771865274506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1642714843321!5m2!1sru!2sru" width="100%" height="350" allowfullscreen="" loading="lazy"></iframe>
+          <iframe class="booking__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497887.11375002586!2d-111.98510294768319!3d34.934771865274506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1642714843321!5m2!1sru!2sru" width="320" height="350" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
     </main>
