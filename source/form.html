@@ -57,7 +57,7 @@
         <div class="intro__wrapper">
           <picture>
             <source media="(min-width: 768px)" srcset="img/intro-text-form-catalog-tablet.svg">
-            <img src="img/intro-text-form-catalog-mobile.svg" width="230" height="40" alt="Добро пожаловать в Седону">
+            <img src="img/intro-text-form-catalog-mobile.svg" alt="Добро пожаловать в Седону">
           </picture>
         </div>
       </section>
@@ -76,51 +76,51 @@
                 <li class="review__item">
                   <label class="review__label">
                     <span class="review__label-caption">Имя*:</span>
-                    <input class="review__input" type="text" name="name" required>
+                    <input class="review__input" type="text" name="name" value="Петр" required>
                   </label>
                 </li>
                 <li class="review__item">
                   <label class="review__label">
                     <span class="review__label-caption">Фамилия*:</span>
-                    <input class="review__input" type="text" name="surname" required>
+                    <input class="review__input" type="text" name="surname" value="Иванов" required>
                   </label>
                 </li>
                 <li class="review__item">
                   <label class="review__label">
                     <span class="review__label-caption">Отчество*:</span>
-                    <input class="review__input" type="text" name="patronymic" required>
+                    <input class="review__input" type="text" name="patronymic" value="Александрович" required>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="review__group review__group--contacts">
-              <legend class="review__legend review__legend--border"><span>Контактная информация:</span></legend>
+              <legend class="review__legend review__legend--contacts review__legend--border"><span>Контактная информация:</span></legend>
               <ul class="review__list">
                 <li class="review__item review__item--tel">
                   <label class="review__label review__label--tel">
                     <span class="review__label-caption review__label-caption--contacts"><span>Контактный </span>телефон*:</span>
-                    <input class="review__input review__input--tel" type="tel" name="tel" required>
+                    <input class="review__input review__input--tel" type="tel" name="tel" placeholder="Введите телефон" required>
                   </label>
                 </li>
                 <li class="review__item">
                   <label class="review__label review__label--email">
                     <span class="review__label-caption review__label-caption--contacts">Электронная почта*:</span>
-                    <input class="review__input review__input--email" type="email" name="email" required>
+                    <input class="review__input review__input--email" type="email" name="email" placeholder="Введите e-mail"  required>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="review__group review__group--impression">
-              <legend class="review__legend review__legend--big-margin">Ваше общее впечатление:</legend>
-              <ul class="review__list">
-                <li class="review__item review__item--big-margin">
+              <legend class="review__legend review__legend--impression">Ваше общее впечатление:</legend>
+              <ul class="review__list review__list--impression">
+                <li class="review__item review__item">
                   <label class="review__control">
                     <input class="review__input review__input--radio visually-hidden" type="radio" name="impression" value="5" checked>
                     <span  class="review__mark review__mark--radio"></span>
                     <span class="review__control-label">Скорее положительное</span>
                   </label>
                 </li>
-                <li class="review__item review__item--big-margin">
+                <li class="review__item review__item">
                   <label class="review__control">
                     <input class="review__input review__input--radio visually-hidden" type="radio" name="impression" value="2">
                     <span  class="review__mark review__mark--radio"></span>
@@ -137,15 +137,15 @@
               </ul>
             </fieldset>
             <fieldset class="review__group review__group--attraction">
-              <legend class="review__legend review__legend--big-margin review__legend--border"><span>Посещенные<br>достопримечательности:</span></legend>
-              <ul class="review__list">
+              <legend class="review__legend review__legend--border"><span>Посещенные<br>достопримечательности:</span></legend>
+              <ul class="review__list review__list--attraction">
                 <li class="review__item review__item--big-margin">
                   <label class="review__control">
                     <input class="review__input review__input--checkbox  visually-hidden" type="checkbox" name="devils_bridge" checked>
                     <span  class="review__mark">
                       <img class="review__icon" src="img/tick.svg" alt="Галочка" width="24" height="17">
                     </span>
-                    <span class="review__control-label">Мост дьявола</span>
+                    <span class="review__control-label">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="review__item review__item--big-margin">
@@ -230,6 +230,22 @@
         </div>
       </div>
     </footer>
+    <section class="modal-success modal-success--closed">
+      <h2 class="modal-success__title">Ваш отзыв отправлен!</h2>
+      <p class="modal-success__text">
+        Спасибо за ваще участие, ваш отзыва уже поступил к нам, в ближайшее время мы опубликуем его на сайте.
+      </p>
+      <div class="modal-success__button-wrapper">
+        <button class="modal-success__button button" type="button">Закрыть окно</button>
+      </div>
+    </section>
+    <section class="modal-failure modal-failure--closed">
+      <h2 class="modal-failure__title">Что-то пошло<br>не так!</h2>
+      <p class="modal-failure__text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button class="modal-failure__button button" type="button">Ок</button>
+    </section>
   </div>
   <script src="js/menu-burger.js"></script>
 </body>

@@ -15,11 +15,11 @@
   object-fit: cover;
 
   @media (min-width: @tablet-width) {
-    min-height: 0;
-    max-height: 267px;
+    height: 267px;
+    margin-right: auto;
 
     &--first {
-      max-height: 400px;
+      height: 400px;
     }
   }
 }
@@ -32,7 +32,8 @@
     align-items: center;
     justify-content: space-between;
 
-    padding: 10px 20px 15px;
+    padding: 14px 10px 15px 20px;
+    min-height: 80px;
 
     background-color: #f2f2f2;
 
@@ -72,19 +73,19 @@
 
 .photo-card__likes {
   font-weight: 700;
-  line-height: 50px;
-  position: relative;
+  line-height: 24px;
 
   display: flex;
   align-items: center;
 
-  svg {
-    margin-right: 15px;
+  @media (min-width: @tablet-width) {
+    width: 74px;
   }
 }
 
 .photo-card__like-icon {
   fill: fade(@black, 30%);
+  margin-right: 10px;
 
   @media (min-width: @desktop-width) {
     fill: @white;
