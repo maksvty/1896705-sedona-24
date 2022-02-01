@@ -1,13 +1,14 @@
 .intro {
   display: flex;
   justify-content: center;
-  background: url("../img/intro-bg.jpg") no-repeat;
+  background: url("../img/intro-bg-mobile.jpg") no-repeat;
 
+  position: relative;
 
   &--index {
     padding-top: 90px;
     height: 390px;
-    background-position: 50% -37px;
+    background-position: 50% 0;
   }
 
   &--inner {
@@ -16,7 +17,19 @@
     background-position: bottom;
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 57px;
+
+    bottom: 0;
+    background: url("../img/intro-triangle.svg") no-repeat center;
+  }
+
   @media (min-width: @tablet-width) {
+    background: url("../img/intro-bg-tablet.jpg") no-repeat;
+
     &--index {
       padding-top: 78px;
       height: 518px;
@@ -26,11 +39,23 @@
     &--inner {
       padding-top: 95px;
       height: 290px;
+      background-position: bottom;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--inner {
+      height: 300px;
     }
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/intro-bg@2x.jpg");
-    background-size: 1200px auto;
+    background-image: url("../img/intro-bg-mobile@2x.jpg");
+    background-size: 901px auto;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/intro-bg-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 }
