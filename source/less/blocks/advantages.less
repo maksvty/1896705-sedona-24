@@ -21,11 +21,11 @@
     margin-bottom: 57px;
     width: 550px;
     margin-bottom: 53px;
-    margin-bottom: 27px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 17px;
+    margin-bottom: 44px;
   }
 }
 
@@ -126,11 +126,11 @@
     align-items: center;
 
     min-height: 256px;
-    padding: 40px 30px 29px;
+    padding: 40px 38px 29px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 45px 50px;
+    padding: 45px 70px;
   }
 
   &--border {
@@ -182,6 +182,18 @@
 
 .advantages__description {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    &--grand-canyon br{
+      display: none;
+    }
+  }
+
+  @media (max-width: @desktop-width - 1) {
+    &--bridge br{
+      display: none;
+    }
+  }
 }
 
 .advantages__image {
