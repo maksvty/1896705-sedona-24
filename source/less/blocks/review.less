@@ -45,6 +45,12 @@
   margin: 0;
   margin-bottom: 18px;
 
+  @media (max-width: @tablet-width - 1) {
+    br {
+      display: none;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     margin-bottom: 68px;
   }
@@ -358,6 +364,7 @@
     width: 100%;
     height: 160px;
     padding: 20px;
+    resize: none;
   }
 
   &:hover {
@@ -455,4 +462,10 @@
   @media (min-width: @tablet-width) {
     width: 100%;
   }
+}
+
+.review__asterisk {
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
