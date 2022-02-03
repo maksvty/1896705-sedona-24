@@ -401,6 +401,7 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 
   &--radio {
     border-radius: 50%;
@@ -431,6 +432,10 @@
   background-color: #000000;
   border-radius: 50%;
 }
+
+.review__input[type="radio"]:focus + .review__mark,
+.review__input[type="checkbox"]:focus + .review__mark{
+  outline: 3px solid #5496bd
 
 .review__icon {
   display: none;
