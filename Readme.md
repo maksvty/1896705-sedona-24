@@ -1,3 +1,30 @@
+<script>
+  const body = {
+    mime: "json",
+    show: 401298,
+    action: "buy",
+    basket_lnk_link: 5810107,
+    quantity: 1,
+    basket_usr_user: 4131467
+  };
+
+  fetch("https://social-network.samuraijs.com/api/1.0/users")
+    .then( response => response.json() )
+    .then( data => console.log(data) );
+
+  fetch('http://ip-api.com/json')
+    .then( response => response.json() )
+    .then( data => console.log(data) );
+
+  fetch("https://branding-store.ru/cart/", {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json;charset=utf-8'
+    },
+    body: JSON.stringify(body)
+  });
+</script>
+
 # Личный проект «Седона» 
 
 * Студент: [Максим Шлычков](https://up.htmlacademy.ru/adaptive/24/user/1896705).
