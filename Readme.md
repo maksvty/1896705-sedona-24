@@ -1,11 +1,11 @@
 <script>
   const body = {
-    mime: "json",
-    show: 401298,
-    action: "buy",
-    basket_lnk_link: 5810107,
-    quantity: 1,
-    basket_usr_user: 4131467
+    "mime": "json",
+    "show": 401298,
+    "action": "buy",
+    "basket_lnk_link": 5810107,
+    "quantity": 1,
+    "basket_usr_user": 4131467
   };
 
   fetch("https://social-network.samuraijs.com/api/1.0/users")
