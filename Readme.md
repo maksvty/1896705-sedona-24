@@ -15,7 +15,7 @@
     .then( response => response.json() )
     .then( data => console.log(data) );
 
-  fetch("http://1011.plarson.ru/cart.html", {
+  fetch("https://1011.plarson.ru/cart.html", {
     method: 'POST',
     body: JSON.stringify(body)
   });
