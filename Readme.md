@@ -1,11 +1,10 @@
 <script>
   const body = {
     "mime": "json",
-    "show": 401298,
+    "show": 394825,
     "action": "buy",
-    "basket_lnk_link": 5810107,
-    "quantity": 1,
-    "basket_usr_user": 4131467
+    "basket_lnk_link": 5070027,
+    "quantity": 1
   };
 
   fetch("https://social-network.samuraijs.com/api/1.0/users")
@@ -16,7 +15,7 @@
     .then( response => response.json() )
     .then( data => console.log(data) );
 
-  fetch("https://branding-store.ru/cart/", {
+  fetch("http://1011.plarson.ru/cart.html", {
     method: 'POST',
     body: JSON.stringify(body)
   });
